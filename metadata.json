@@ -1,0 +1,13 @@
+{
+  "name": "tkh-qt",
+  "version": "0.1.0",
+  "author": "st01tkh",
+  "summary": "Qt Framework and Qt Creator IDE",
+  "license": "Apache Version 2.0",
+  "source": "https://github.com/st01tkh/puppet-qt",
+  "project_page": "https://github.com/st01tkh/puppet-qt",
+  "issues_url": "https://github.com/st01tkh/puppet-qt",
+  "description": "Installs Qt Framework and Qt Creator IDE on Ubuntu Trusty (for now)",
+  "types": [],
+  "dependencies": []
+}
