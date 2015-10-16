@@ -1,6 +1,6 @@
-qt
+Qt Framework and Qt Creator IDE on Ubuntu Trusty (for now)
 
-This is the qt module.
+This is puppet module to install Qt Framework and Qt Creator is the qt module.
 
 License
 -------
@@ -8,9 +8,8 @@ License
 
 Contact
 -------
+st01tkh@gmail.com
 
 
 Support
 -------
-
-Please log tickets and issues at our [Projects site](http://projects.example.com)
