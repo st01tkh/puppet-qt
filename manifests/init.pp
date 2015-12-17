@@ -33,11 +33,11 @@ class qt {
     'precise': {
     }
     'trusty': {
-        exec {"add_ppa_beineri_opt_qt55_trusty_repo":
-          command => "add-apt-repository -y ppa:beineri/opt-qt55-trusty",
+        exec {"add_ppa_beineri_opt_qt551_trusty_repo":
+          command => "add-apt-repository -y ppa:beineri/opt-qt551-trusty",
           path => [ '/bin', '/sbin', '/usr/bin', '/usr/sbin', '/usr/local/bin', '/usr/local/sbin' ]
         }
-        exec {"up_ppa_beineri_opt_qt55_trusty_repo":
+        exec {"up_ppa_beineri_opt_qt551_trusty_repo":
           command => "apt-get -y update",
           path => [ '/bin', '/sbin', '/usr/bin', '/usr/sbin', '/usr/local/bin', '/usr/local/sbin' ]
         }
@@ -48,8 +48,8 @@ class qt {
           ensure => 'installed',
         }
 
-        Exec["add_ppa_beineri_opt_qt55_trusty_repo"]->
-        Exec["up_ppa_beineri_opt_qt55_trusty_repo"]->
+        Exec["add_ppa_beineri_opt_qt551_trusty_repo"]->
+        Exec["up_ppa_beineri_opt_qt551_trusty_repo"]->
         Package["qt-latest"]->
         Package["qt55creator"]
     }
